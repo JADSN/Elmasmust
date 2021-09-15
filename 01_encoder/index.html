@@ -1,0 +1,59 @@
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Encoder SHA2</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+    <!-- Styles -->
+    <link defer rel="stylesheet" href="./main.css">
+
+    <!-- Scripts -->
+
+    <!-- Generated -->
+    <script defer src="./pkg/sha2encoder.js"></script>
+
+    <!-- Created by me -->
+    <script defer src="./functions.js"></script>
+    <script defer src="./main.js"></script>
+  </head>
+
+  <body>
+    <div class="vh-100 container-flex">
+      <input class="inp-user-text mb-10 wp-50" type="text" name="inp-user-text" id="inp-user-text" placeholder="Text"
+        autofocus>
+
+      <div id="div-encode-options" class="container-flex-row mb-10">
+        <div>
+          <input class="cb" type="radio" id="encode-md5" name="encode" value="md5" checked>
+          <label for="encode-md5">MD5</label>
+        </div>
+
+        <div>
+          <input class="cb" type="radio" id="encode-sha1" name="encode" value="sha1">
+          <label for="encode-sha1">SHA1</label>
+        </div>
+
+        <div>
+          <input class="cb" type="radio" id="encode-sha256" name="encode" value="sha256">
+          <label for="encode-sha256">SHA256</label>
+        </div>
+
+        <div>
+          <input class="cb" type="radio" id="encode-sha512" name="encode" value="sha512">
+          <label for="encode-sha512">SHA512</label>
+        </div>
+      </div>
+
+      <div class="container-flex">
+        <h3 class="wp-95 wrap-text-three-dots" name="h3-sha1-code" id="h3-sha1-code"></h3>
+      </div>
+    </div>
+  </body>
+
+</html>
