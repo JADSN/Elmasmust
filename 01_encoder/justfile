@@ -14,3 +14,9 @@ run: afterBuild
 
 clean:
 	./scripts/clean.sh
+
+setup:
+	./scripts/setup.sh && just run
+
+listen:
+	watchexec --exts js,css,html,rs,elm -i "target/**" -d 10000 -r -c -p -N -w ./ just run

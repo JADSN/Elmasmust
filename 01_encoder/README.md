@@ -1,8 +1,17 @@
 # Encoders
 
+## Setup
+
+1. `curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh`
+1. `sudo apt-get install binaryen wabt`
+1. `cargo install wasm-snip`
+1. `cargo install just`
+
 ## Usage
 
-Execute `make`
+Execute 
+    -  First time: `just setup`
+    -  `just listen`
 
 ## If change package name:
 
